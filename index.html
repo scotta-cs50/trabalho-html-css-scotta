@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas de Numeração</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sistemas de Numeração</h1>
+    <p>
+      Esta página foi criada como material de apoio para quem está começando a estudar
+      Sistemas de Numeração, um assunto muito importante dentro da Computação. Aqui você vai
+      entender por que os computadores usam o sistema binário, como funciona o sistema
+      hexadecimal e como converter números entre essas diferentes bases.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#binario">Sistema Binário</a></li>
+      <li><a href="#hexadecimal">Sistema Hexadecimal</a></li>
+      <li><a href="#tabela">Tabela de Conversão</a></li>
+      <li><a href="#formulario">Formulário</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="intro">
+      <h2>O que é um sistema de numeração?</h2>
+      <p>
+        Um sistema de numeração é uma forma de representar quantidades usando símbolos.
+        No dia a dia usamos o sistema decimal, que tem 10 símbolos (0 a 9). Já os
+        computadores trabalham internamente com o sistema binário, que tem apenas 2
+        símbolos (0 e 1), porque seus componentes eletrônicos só reconhecem dois estados:
+        ligado e desligado.
+      </p>
+      <p>
+        Além do decimal e do binário, existem outras bases muito usadas na área de
+        Computação, como o sistema octal (base 8) e o sistema hexadecimal (base 16). Cada
+        uma delas tem uma utilidade diferente dependendo do contexto.
+      </p>
+    </section>
+
+    <section id="binario">
+      <h2>Sistema Binário</h2>
+      <p>
+        O sistema binário é a base de tudo o que um computador faz. Cada dígito binário é
+        chamado de "bit" (binary digit) e pode valer 0 ou 1. Quando juntamos 8 bits, formamos
+        um "byte", a unidade básica usada para medir a quantidade de informação armazenada
+        em um computador.
+      </p>
+      <p>Alguns pontos importantes sobre o sistema binário:</p>
+      <ul>
+        <li>Cada posição do número binário representa uma potência de 2</li>
+        <li>O bit mais à direita é chamado de bit menos significativo</li>
+        <li>O bit mais à esquerda é chamado de bit mais significativo</li>
+        <li>É a linguagem "nativa" de qualquer computador</li>
+      </ul>
+
+      <figure>
+        <img src="img/potencias-binarias.png" alt="Diagrama mostrando o valor de cada posição em um número binário de 8 bits">
+        <figcaption>Cada posição de um número binário representa uma potência de 2</figcaption>
+      </figure>
+    </section>
+
+    <section id="hexadecimal">
+      <h2>Sistema Hexadecimal</h2>
+      <p>
+        O sistema hexadecimal usa base 16, ou seja, 16 símbolos: de 0 a 9 e depois as letras
+        de A a F (onde A vale 10 e F vale 15). Ele é muito usado na programação porque
+        consegue representar um byte inteiro usando apenas dois dígitos, o que facilita a
+        leitura de endereços de memória, cores em CSS (como #2c3e50) e códigos de erro.
+      </p>
+
+      <figure>
+        <a href="https://www.rapidtables.com/convert/number/binary-to-decimal.html" target="_blank" rel="noopener noreferrer">
+          <img src="img/tabela-bases.png" alt="Tabela comparando números decimais, binários e hexadecimais de 0 a 7">
+        </a>
+        <figcaption>Clique na imagem para abrir um conversor de bases online</figcaption>
+      </figure>
+    </section>
+
+    <section id="tabela">
+      <h2>Tabela de Conversão entre Bases</h2>
+      <p>
+        A tabela abaixo mostra a mesma quantidade representada em três bases numéricas
+        diferentes: decimal, binário e hexadecimal.
+      </p>
+
+      <table>
+        <caption>Comparação entre as bases Decimal, Binária e Hexadecimal (0 a 10)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Decimal</th>
+            <th scope="col">Binário</th>
+            <th scope="col">Hexadecimal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0</td><td>0000</td><td>0</td></tr>
+          <tr><td>1</td><td>0001</td><td>1</td></tr>
+          <tr><td>2</td><td>0010</td><td>2</td></tr>
+          <tr><td>3</td><td>0011</td><td>3</td></tr>
+          <tr><td>4</td><td>0100</td><td>4</td></tr>
+          <tr class="linha-destaque"><td>5</td><td>0101</td><td>5</td></tr>
+          <tr><td>6</td><td>0110</td><td>6</td></tr>
+          <tr><td>7</td><td>0111</td><td>7</td></tr>
+          <tr><td>8</td><td>1000</td><td>8</td></tr>
+          <tr><td>9</td><td>1001</td><td>9</td></tr>
+          <tr><td>10</td><td>1010</td><td>A</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Tabela criada apenas para fins didáticos</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="formulario">
+      <h2>Formulário de Contato</h2>
+      <p>
+        Ficou com alguma dúvida sobre o conteúdo desta página? Preencha o formulário abaixo
+        e entraremos em contato.
+      </p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+          <label for="nascimento">Data de nascimento:</label>
+          <input type="date" id="nascimento" name="nascimento">
+
+          <label for="curso">Curso:</label>
+          <select id="curso" name="curso">
+            <option value="tads">Tecnologia e Análise de Desenvolvimento de Sistemas</option>
+            <option value="cc">Ciência da Computação</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <label for="nivel">Nível de conhecimento sobre o assunto (0 a 10):</label>
+          <input type="range" id="nivel" name="nivel" min="0" max="10" value="5">
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua dúvida aqui"></textarea>
+
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Quero receber novidades sobre o assunto
+          </label>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="video">
+      <h2>Vídeo Explicativo</h2>
+      <p>
+        Para reforçar o conteúdo estudado nesta página, assista ao vídeo abaixo, que explica
+        os sistemas de numeração Decimal, Binário, Octal e Hexadecimal.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DJYIndxhcKc"
+        title="Sistemas de Numeração e Conversões de Bases"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      Página desenvolvida por Lucas Scotta de Almeida, estudante do curso de Tecnologia e Análise de
+      Desenvolvimento de Sistemas, como trabalho da disciplina de Front End (HTML, GitHub e CSS básico).
+    </p>
+  </footer>
+
+</body>
+</html>
